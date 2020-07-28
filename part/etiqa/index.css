@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    display: block;
+    width: 122px;
+    height: 26px;
+    background-image: url(https://www.etiqa.co.kr/img/common/sp_ico.svg);
+    background-position: 0px -739px;
+}
+
+.top-bar {
+    background: #9CAAC1;
+    justify-content: space-around;
+    padding: 130px 40px;
+}
+
+.menu-bar>.menu-bar2>li {
+    padding: 0 30px;
+    color: #Fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu-bar>.menu-bar2>li>a:hover {
+    border-bottom: solid 2px #Fff;
+}
+
+.side-bar {
+    font-size: 30px;
+    color: #Fff;
+}
+
+.side-bar:hover {
+    transition: 0.3s;
+    transform: rotate(45deg);
+
+}
