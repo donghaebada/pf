@@ -14,6 +14,8 @@ a {
     color: inherit;
 }
 
+
+
 .after::after {
     display: block;
     content: "";
@@ -30,7 +32,11 @@ a {
     height: 26px;
     background-image: url(https://www.etiqa.co.kr/img/common/sp_ico.svg);
     background-position: 0px -739px;
+    position: fixed;
+    top: 130px;
+    left: 100px;
 }
+
 
 .top-bar {
     background: #9CAAC1;
@@ -54,7 +60,7 @@ a {
     color: #Fff;
     position: fixed;
     top: 120px;
-    right: 200px;
+    right: 100px;
 }
 
 .side-bar:hover {
@@ -69,10 +75,52 @@ a {
 }
 
 .contents-box {
-    width: 1600px;
+    width: 1800px;
     margin: 0px auto;
 }
 
 .contents-box>.con1>div>img {
-    width: 1600px;
+    width: 1800px;
+}
+
+.text-box {
+    justify-content: space-between;
+}
+
+.text-box>.box1>h4 {
+    color: #fff;
+    margin-top: 70px;
+}
+
+.text-box>.box1>div {
+    width: 150px;
+    height: 50px;
+    background: #Fff;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.text-box>.box1>div:hover {
+    background: black;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.text-box>.box1>div>a {
+    display: block;
+}
+
+.text-box>.box2 {
+    color: #Fff;
+    margin-top: 70px;
+}
+
+.text-box>.box3 {
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
 }
