@@ -45,10 +45,11 @@ a {
 }
 
 .menu-bar>.menu-bar2>li {
-    padding: 0 30px;
+    padding: 0 40px;
     color: #Fff;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .menu-bar>.menu-bar2>li>a:hover {
@@ -65,7 +66,7 @@ a {
 
 .side-bar:hover {
     transition: 0.3s;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
 }
 
 
@@ -79,15 +80,21 @@ a {
     margin: 0px auto;
 }
 
-.contents-box>.con1>div>img {
+.contents-box>div>div>a>img {
     width: 1800px;
+    height: 400px;
 }
 
 .text-box {
-    justify-content: space-between;
+    width: 1800px;
 }
 
-.text-box>.box1>h4 {
+.text-box>.box1 {
+    width: 60%;
+    float: left;
+}
+
+.text-box>.box1>h3 {
     color: #fff;
     margin-top: 70px;
 }
@@ -101,7 +108,7 @@ a {
     line-height: 50px;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .text-box>.box1>div:hover {
@@ -117,10 +124,27 @@ a {
 .text-box>.box2 {
     color: #Fff;
     margin-top: 70px;
+    float: left;
+    width: 15%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text-box>.box3 {
     color: #fff;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 500;
+    margin-top: 70px;
+    float: left;
+    width: 25%;
+    line-height: 30px;
+}
+
+.con2>div>a>img {
+    margin-top: 80px;
+}
+
+
+.con3>div>a>img {
+    background-size: contain;
+    margin-top: 70px;
 }
