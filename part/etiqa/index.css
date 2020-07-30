@@ -52,10 +52,27 @@ a {
 .side-bar {
     font-size: 30px;
     color: #Fff;
+    position: fixed;
+    top: 120px;
+    right: 200px;
 }
 
 .side-bar:hover {
     transition: 0.3s;
     transform: rotate(45deg);
+}
 
+
+.contents {
+    width: 100%;
+    background: #9CAAC1;
+}
+
+.contents-box {
+    width: 1600px;
+    margin: 0px auto;
+}
+
+.contents-box>.con1>div>img {
+    width: 1600px;
 }
