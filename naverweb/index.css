@@ -17,3 +17,67 @@ a {
     content: "";
     clear: both;
 }
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.header {
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.header>.logo>a>img {
+    height: 20px;
+    width: 97.0781px;
+}
+
+.info {
+    position: fixed;
+    right: 410px;
+    top: 22px;
+}
+
+.info>div:first-child {
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: solid 1px black;
+}
+
+.info>div:last-child {
+    float: left;
+    font-size: 12px;
+}
+
+.side-bar>a>img {
+    width: 20px;
+    height: 20px;
+}
+
+.visual {
+    width: 100%;
+    position: relative;
+}
+
+.visual>div>p {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+
+.visual>div>a>img {
+    width: 47.0469;
+    height: 50px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
