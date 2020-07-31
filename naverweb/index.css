@@ -17,14 +17,3 @@ a {
     content: "";
     clear: both;
 }
-
-.wrap>.header
-
-.wrap>.header>.headerwrap>h1>a {
-    background: url(https://webtoonscorp.com/img/sp_ico.png) no-repeat;
-    background-size: 500px 3000px;
-    background: rgba(0, 0, 0, 0);
-    position: absolute;
-    background-position-x: 0px;
-    background-position-y: -765px;
-}
