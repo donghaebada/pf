@@ -172,3 +172,37 @@ a {
 .con8>div {
     padding-bottom: 100px;
 }
+
+
+.box-menu>li {
+    float: left;
+}
+
+.box-menu>li>a>img {
+    width: 870px;
+    height: 870px;
+}
+
+.box-menu>li:nth-of-type(odd) {
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.box-menu>li:nth-of-type(even) {
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+
+.box-menu>li>a {
+    position: relative;
+}
+
+.box-menu>li>a>h3 {
+    position: absolute;
+    display: block;
+    bottom: 730px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
