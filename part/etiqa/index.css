@@ -39,7 +39,7 @@ a {
 
 
 .top-bar {
-    background: #9CAAC1;
+    background: #A5B7D8;
     justify-content: space-around;
     padding: 130px 40px;
 }
@@ -72,7 +72,7 @@ a {
 
 .contents {
     width: 100%;
-    background: #9CAAC1;
+    background: #A5B7D8;
 }
 
 .contents-box {
@@ -147,4 +147,28 @@ a {
 .con3>div>a>img {
     background-size: contain;
     margin-top: 70px;
+}
+
+.con4>div>a>video {
+    margin-top: 70px;
+}
+
+.con5>div>a>img {
+    margin-top: 70px;
+}
+
+.con6>div>a>video {
+    margin-top: 70px;
+}
+
+.con7>div>a>video {
+    margin-top: 70px;
+}
+
+.con8>div>a>img {
+    margin-top: 70px;
+}
+
+.con8>div {
+    padding-bottom: 100px;
 }
