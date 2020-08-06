@@ -37,24 +37,91 @@ a {
     left: 100px;
 }
 
-
 .top-bar {
     background: #A5B7D8;
     justify-content: space-around;
     padding: 130px 40px;
+    padding-bottom: 180px;
 }
 
+/*ㅁㅔ뉴바 1차*/
+
 .menu-bar>.menu-bar2>li {
-    padding: 0 40px;
+    margin: 0 40px;
     color: #Fff;
     font-weight: bold;
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
 }
 
-.menu-bar>.menu-bar2>li>a:hover {
-    border-bottom: solid 2px #Fff;
+.menu-bar>.menu-bar2>li>a::before {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #Fff;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    transition: 0.3s;
 }
+
+.menu-bar>.menu-bar2>li:hover>a::before {
+    width: 100%;
+}
+
+/*2차 메뉴바*/
+
+.menu-bar>ul ul {
+    position: absolute;
+    top: calc(100% - 15px);
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 1s;
+}
+
+.menu-bar>.menu-bar2>li>ul>li {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 18px;
+}
+
+.menu-bar>ul>li:nth-child(2):hover>ul {
+    padding: 15px 0;
+    height: 300px;
+    opacity: 1;
+}
+
+.menu-bar>ul>li:nth-child(3):hover>ul {
+    padding: 15px 0;
+    height: 300px;
+    opacity: 1;
+}
+
+.menu-bar>ul ul>li {
+    position: relative;
+}
+
+
+.menu-bar>ul ul>li>a::before {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #Fff;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.menu-bar>ul ul>li:hover>a::before {
+    width: 100%;
+}
+
+/*메뉴바 끝*/
 
 .side-bar {
     font-size: 30px;
@@ -64,10 +131,7 @@ a {
     right: 100px;
 }
 
-.side-bar:hover {
-    transition: 0.3s;
-    transform: rotate(90deg);
-}
+
 
 
 .contents {
