@@ -35,6 +35,7 @@ a {
     position: fixed;
     top: 130px;
     left: 100px;
+    z-index: 9999;
 }
 
 .top-bar {
@@ -100,10 +101,11 @@ a {
     opacity: 1;
 }
 
-.menu-bar>ul ul>li {
+.menu-bar>ul ul>li>a{
     position: relative;
 }
 
+/*글씨보다 줄이 왜 길었냐? 위에꺼 relative를 a가 아니라 li에 주었기 때문에*/
 
 .menu-bar>ul ul>li>a::before {
     display: block;
@@ -112,7 +114,7 @@ a {
     height: 2px;
     background-color: #Fff;
     position: absolute;
-    top: 35px;
+    bottom: 0; /*닌 탑으로 했었는데 바텀 0으로 가야함*/
     left: 0;
     transition: 0.3s;
 }
@@ -123,15 +125,22 @@ a {
 
 /*메뉴바 끝*/
 
+
+/*사이드바*/
 .side-bar {
     font-size: 30px;
     color: #Fff;
     position: fixed;
     top: 120px;
     right: 100px;
+    z-index: 9999;
+    transition: all ease 0.3s;
 }
 
-
+.side-bar:hover {
+    transform: rotate(180deg);
+}
+/*사이드바 끝*/
 
 
 .contents {
@@ -264,9 +273,53 @@ a {
 .box-menu>li>a>h3 {
     position: absolute;
     display: block;
-    bottom: 730px;
+    bottom: 700px;
     margin-left: 50px;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+}
+
+.box-menu>.color-gray>a>h3 {
+    color: gray;
+}
+
+.box-menu>.color-yellow>a>h3 {
+    color: gold;
+}
+
+.box-menu>.color-black>a>h3 {
+    color: #000;
+}
+
+.box-menu>li>a>video {
+    width: 870px;
+    height: 870px;
+}
+
+/*푸터 시작*/
+
+.footer1 {
+    width: 1800px;
+    margin-top: 150px;
+}
+
+.footer1>.footer-bar {
+    width: 1800px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+.footer1>.footer-bar>div {
+    float: left;
+    margin-right: 8%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #Fff;
+}
+
+.footer1>.footer-bar>div>li {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
 }
