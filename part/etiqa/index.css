@@ -308,6 +308,7 @@ a {
     width: 1800px;
     border-top: 5px solid #fff;
     border-bottom: 5px solid #fff;
+    padding: 0 30px;
 }
 
 .footer1>.footer-bar>div {
@@ -322,4 +323,5 @@ a {
     font-size: 12px;
     font-weight: bold;
     margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
